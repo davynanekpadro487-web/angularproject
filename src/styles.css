@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* TO7 e-SIM Brand Colors Customization */
+:root {
+    --to7-red: #e63946;
+    --to7-dark-red: #a82733;
+    --to7-white: #ffffff;
+    --to7-gray: #f8f9fa;
+    --to7-text-dark: #203A5F;
+}
+
+/* Background Gradients Override */
+.hero-section::before,
+.background-img::before,
+.bg-gradient {
+    background: linear-gradient(135deg, var(--to7-red) 0%, var(--to7-dark-red) 100%) !important;
+}
+
+/* Header States */
+.navbar {
+    background: var(--to7-red) !important;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.affix {
+    background: var(--to7-dark-red) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Specific TO7 Hero Background */
+.to7-hero-bg {
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.9) 0%, rgba(168, 39, 51, 0.95) 100%), url('/img/app-hero-bg.jpg') no-repeat center center / cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Primary Color overrides */
+.color-primary,
+.text-primary,
+.color-secondary,
+.text-secondary {
+    color: var(--to7-text-dark) !important;
+}
+
+/* Buttons */
+.solid-btn {
+    background: var(--to7-white) !important;
+    color: var(--to7-red) !important;
+    border-color: var(--to7-white) !important;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2) !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+}
+
+.solid-btn:hover {
+    background: var(--to7-gray) !important;
+    color: var(--to7-dark-red) !important;
+    border-color: var(--to7-gray) !important;
+}
+
+.action-btns .solid-btn {
+    background: var(--to7-white) !important;
+    color: var(--to7-red) !important;
+}
+
+.action-btns .solid-btn:hover {
+    background: var(--to7-gray) !important;
+}
+
+.outline-btn {
+    border: 2px solid var(--to7-white) !important;
+    color: var(--to7-white) !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+}
+
+.outline-btn:hover {
+    background: var(--to7-white) !important;
+    color: var(--to7-red) !important;
+}
+
+/* Default buttons across site when not on red bg */
+body:not(.hero-section) .solid-btn,
+.pricing-section .solid-btn,
+.contact-us-section .solid-btn {
+    background: var(--to7-red) !important;
+    color: var(--to7-white) !important;
+    border-color: var(--to7-red) !important;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3) !important;
+}
+
+body:not(.hero-section) .solid-btn:hover,
+.pricing-section .solid-btn:hover,
+.contact-us-section .solid-btn:hover {
+    background: var(--to7-dark-red) !important;
+    border-color: var(--to7-dark-red) !important;
+    color: var(--to7-white) !important;
+}
+
+/* Navbar active / hover links */
+.navbar-nav .nav-item .nav-link {
+    color: var(--to7-white) !important;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active {
+    color: var(--to7-white) !important;
+    opacity: 0.9;
+    background-color: transparent !important;
+}
+
+.text-danger {
+    color: var(--to7-red) !important;
+}
+
+/* Soft backgrounds */
+.gray-light-bg {
+    background: var(--to7-gray) !important;
+}
+
+/* Feature Icon Colors */
+.icon-box i,
+.featured-icon i,
+.ti-control-play,
+.single-feature .icon-box span {
+    color: var(--to7-text-dark) !important;
+}
